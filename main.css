@@ -1,0 +1,251 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+header, section, .about, .sectionabout, section.service, #contact, form, input, textarea, button {
+    font-family: "Spectral", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header{
+    padding: 16px;
+    background-color: #c4b79e;
+    color: #000;
+    position:fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+header nav li {
+    display: inline;
+    margin-left: 16px;
+    font-size: 18px;
+}
+
+header nav li a {
+    color: #000;
+    text-decoration: none;
+}
+
+header .container {
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.container, #contact {
+    max-width: 1080px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+section#hero h1 span{
+    color: #fff;
+    font-size: 22px;
+}
+
+section#hero h1 {
+    color:#c4b79e;
+    margin-bottom: 40px;
+    position: relative;
+    font-weight: lighter;
+    font-size: xx-large;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+section#hero a:first-of-type{
+    margin-bottom: 30px;
+}
+
+section#hero a {
+    background-color:#a53f74;
+    color: #fff;
+}
+
+section#hero h1:after {
+    content: "";
+    width: 60px;
+    height: 2px;
+    background-color: #c4b79e;
+    display: block;
+    margin: 20px auto 0; }
+
+section#hero{
+    width: 100%;
+    height: calc(100vh - 105px);
+    background-image: linear-gradient(to bottom, rgba(34, 97, 148, .8), rgba(34, 97, 148, .8)), url(images/heroBg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10vh; }
+
+a.btn {
+    text-transform: uppercase;
+    font-size: .8rem;   
+    display: inline-block;
+    padding: 12px 48px;
+    border-radius: 50px;
+    text-decoration: none;
+}
+
+section.about h2{
+    color: #c4b79e;
+    margin-left: 20px;
+    letter-spacing: 1px;
+}
+
+.sectionabout{
+    background-color: #c4b79e;
+    color: #fff;
+    position: center;
+    font-style: italic;
+    justify-content: space-between;
+    
+}
+
+.sectionabout p:first-of-type:before{
+    content: "";
+    display: block;
+    height: 2px;
+    width: 100px;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+}
+
+.sectionabout p:first-of-type::after{
+    content: "";
+    display: block;
+    height: 2px;
+    width: 100px;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+}
+
+.sectionabout {
+    padding: 40px 0;
+}   
+
+.serviceWrapper, .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.serviceWrapper img {
+    height: 200px;
+    margin-right: 16px;
+}
+
+.serviceWrapper{
+    width: 1080px;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+#service h2, #contact {
+    color: #a53f74;
+    margin-left: 20px;
+    letter-spacing: 1px;
+}
+
+.serviceImg p {
+    color: #fff;
+    background-color: #a53f74;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 12px 36px;
+    z-index: 1;
+    width: 250px;
+    text-transform: uppercase;
+}
+
+.serviceImg{
+        position: relative;
+        overflow:hidden;
+        height: 200px;
+        width: auto;
+}
+
+.container {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+}
+
+#contact {
+    padding: 24px 0;
+}
+
+.contact-methods {
+    display: flex;
+    justify-content:space-between;
+}
+
+form input, 
+form textarea, 
+form button {
+    display: block;
+    width: 300px;
+    margin-bottom: 8px;
+    padding: 8px;
+}
+
+form button {
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover{
+    background-color: #a53f74
+}
+
+form textarea{
+    resize: none;
+    height: 180px;
+}
+
+.contactform p {
+    display: inline;
+}
+
+.social img{
+    height: 24px;
+}
+
+.social li{
+    display: inline;
+    margin-right: 8px;
+}
+
+.social li a {
+    text-decoration: none;
+}
+
+section h3 {
+    margin-bottom: 16px;
+}
+
+section p{
+    padding-bottom: 8px;
+}
+
+footer{
+    background-color: #a53f74;
+    color: #fff;
+    padding: 16px 0;
+}
